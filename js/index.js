@@ -17,14 +17,15 @@ el: 'body',
       "Jaime Lannister":"http://vignette1.wikia.nocookie.net/villainstournament/images/2/21/Jaime_lannister.jpg/revision/latest?cb=20140703200540",
       "Samwell Tarly":"https://upload.wikimedia.org/wikipedia/it/c/ca/Samwell_Tarly.jpg"
     },
-    styleObject:{
-
-      visibility: 'visible'
-    },
     styleObject1:{
      display: 'none',
      visibility: 'hidden'
    },
+    styleObject:{
+
+      visibility: 'visible'
+    },
+
    si:null,
   },
 
