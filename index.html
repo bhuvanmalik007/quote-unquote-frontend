@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+
+   <title>Quote-Unquote</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+
+<body v-model="img" style="
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 30px;
+        background-image: url({{img}});
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat:   no-repeat;
+        background-position: center center;">
+
+    <!-- Page Content -->
+    <div class="container" v-bind:style="styleObject">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="animated fadeInDownBig">"QUOTE-UNQUOTE"</h1>
+                    <p class="lead animated lightSpeedIn">A Web Scraping app to display Game of Thrones quotes.<br>Source : <a href="http://www.imdb.com/title/tt0944947/quotes">http://www.imdb.com/title/tt0944947/quotes</a><br>Created by Bhuvan Malik</p>
+                    <ul class="list-unstyled">
+                        <li>Node.js</li>
+                        <li>Cheerio</li>
+                        <li>Vue.js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- /.row -->
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <button type="button" class="btn btn-success btn-lg" v-on:click="begin">Begin</button>
+
+
+                </div>
+              </div>
+
+        </div>
+        <!-- /.row -->
+        <br>
+        <br>
+        <br>
+        <div class="container" v-bind:style="styleObject1">
+        <div id="qt" class="row">
+            <div class="col-lg-8 text-center">
+          <p v-model="quote">{{quote}}</p>
+          <button type="button" class="btn btn-danger col-md-offset-7" v-on:click="end">End</button>
+        </div>
+        </div>
+      </div>
+
+</body>
+    <script src="js/jquery.js"></script>
+
+    <script src="js/vue.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<script src="js/vue-resource.js"></script>
+
+<script src="js/index.js"></script>
+
+
+
+</html>
